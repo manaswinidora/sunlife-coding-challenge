@@ -2,9 +2,9 @@
 
 This application contains: 
 
-- 1 Appplication
-- 1 tab
-- 2 profiles
+- 1 Application
+- 1 Tab
+- 2 Profiles
 - 1 Apex Class
 - 1 LWC 
 
