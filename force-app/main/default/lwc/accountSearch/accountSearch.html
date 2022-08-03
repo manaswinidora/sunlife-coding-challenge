@@ -1,0 +1,25 @@
+<template>
+    <lightning-layout multiple-rows="true" class="bg-white">
+        <lightning-layout-item padding="around-small" size="12">
+            <div class="slds-text-heading_large">{title}</div>
+        </lightning-layout-item>
+
+        <lightning-layout-item padding="around-small" size="12">
+            <lightning-layout>
+                <lightning-layout-item size="3">
+                    <lightning-input name="filter-term" label="Filter by name" type="search" placeholder="Enter filter term" onchange={handleSearch}>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+
+
+        <lightning-layout-item flexibility="auto" padding="around-small" size="12">
+            <lightning-datatable key-field="Id" data={data} columns={columns} hide-checkbox-column
+                onrowaction={handleRowAction} default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection} sorted-by={sortedBy} onsort={onHandleSort}>
+            </lightning-datatable>
+        </lightning-layout-item>
+
+    </lightning-layout>
+</template>
